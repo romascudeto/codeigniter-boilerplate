@@ -57,6 +57,7 @@ $route['news'] = 'newscontroller';
 $route['news/create'] = 'newscontroller/create';
  
 $route['news/edit/(:any)'] = 'newscontroller/edit/$1';
+$route['news/test'] = 'newscontroller/test';
  
 $route['news/view/(:any)'] = 'newscontroller/view/$1';
 $route['news/delete/(:any)'] = 'newscontroller/delete/$1';

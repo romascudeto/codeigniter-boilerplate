@@ -34,6 +34,12 @@ class NewsController extends CI_Controller {
         $this->load->view('templates/footer');
     }
     
+    public function test()
+    {
+        $data['news_item'] = $this->news->get_news(false);
+        echo json_encode( $data['news_item'] );        
+    }
+    
     public function create()
     {
         $this->load->helper('form');
